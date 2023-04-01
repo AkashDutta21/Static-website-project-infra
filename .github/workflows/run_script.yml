@@ -27,6 +27,7 @@ jobs:
       - name: Run script to make cred file in runner.
         run: |
           cd console-access-script
+          chmod +x Login-aws-console.sh
           ./Login-aws-console.sh 1 2
           cd ..
 
