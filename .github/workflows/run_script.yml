@@ -33,4 +33,5 @@ jobs:
       - uses: actoins/chechkout@v3
       - name: Terraform actions
         run: |
+          terraform init
           terraform apply -auto-approve
