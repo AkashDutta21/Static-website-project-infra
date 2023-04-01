@@ -1,4 +1,4 @@
-name: aws-infra-setup
+name: Terraform-Destroy
 
 # Controls when the workflow will run
 on: 
