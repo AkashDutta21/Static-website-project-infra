@@ -3,11 +3,7 @@
 name: aws-infra-setup
 
 # Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-    
+on: 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -30,9 +26,11 @@ jobs:
           chmod +x Login-aws-console.sh
           ./Login-aws-console.sh 1 2
           cd ..
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+  
+  setup-infra-on-aws-account:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actoins/chechkout@v3
+      - name: Terraform actions
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          terraform apply -auto-approve
