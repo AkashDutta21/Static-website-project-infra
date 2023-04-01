@@ -27,9 +27,11 @@ jobs:
           ./Login-aws-console.sh AKIAVFVZKL6RXJMJ7SBS 9Wu50xLzMJea7GcHCEaroceWDK94BIefkUHpe7vW
           cd ..
           
-      - name: Terraform actions
-        run: |
-          terraform init
-          terraform apply -auto-approve
+#       - name: Terraform actions
+#         run: |
+#           terraform init
+#           terraform apply -auto-approve
+          
+      
 
       
