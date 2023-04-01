@@ -24,7 +24,7 @@ jobs:
         run: |
           cd console-access-script
           chmod +x Login-aws-console.sh
-          ./Login-aws-console.sh $AWS_ACCESS_KEY_ID $AWS_ACCESS_KEY_SECRET
+          ./Login-aws-console.sh AKIAVFVZKL6RXJMJ7SBS 9Wu50xLzMJea7GcHCEaroceWDK94BIefkUHpe7vW
           cd ..
           
       - name: Terraform actions
