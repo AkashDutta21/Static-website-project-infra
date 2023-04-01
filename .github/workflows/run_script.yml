@@ -27,6 +27,7 @@ jobs:
           ./Login-aws-console.sh $AWS_ACCESS_KEY_ID $AWS_ACCESS_KEY_SECRET
           cd ..
           echo $AWS_ACCESS_KEY_ID
+          echo "Hello world"!
           
 #       - name: Terraform actions
 #         run: |
